@@ -11,8 +11,7 @@ conn = mariadb.connect(
 )
 cursor = conn.cursor()
 cursor.execute(
-    "INSERT INTO assignment_db (username, content) VALUES (?,?)",
-    ['Howard', 'HoHo']
+    "INSERT INTO blog_post (username, content) VALUES ('Howard', 'HoHo')",
 )
 
 conn.commit()
